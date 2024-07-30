@@ -15,12 +15,6 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "mobileWebClient/Routes": [
-        "mobileWebClient/src/app/remote-entry/entry.routes.ts"
-      ],
-      "mobileWebClient/mobile-web-client": [
-        "apps/mobile-web-client/src/app/app.routes.ts"
-      ]
     }
   },
   "exclude": ["node_modules", "tmp"]
