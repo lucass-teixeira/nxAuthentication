@@ -1,6 +1,14 @@
-#container {
-  text-align: center;
+:host div.test{
+color: red;
+display: flex;
+font-size: large;;
+justify-content: center;
 
+}
+:host{ 
+  #container {
+  text-align: center;
+  background: blue;
   position: absolute;
   left: 0;
   right: 0;
@@ -24,4 +32,5 @@
 
 #container a {
   text-decoration: none;
+}
 }

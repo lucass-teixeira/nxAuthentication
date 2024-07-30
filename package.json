@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "serve:monorepo": "nx serve monorepo"
+    "serve:monorepo": "nx serve monorepo",
+    "serve:shell": "nx serve shell"
   },
   "private": true,
   "dependencies": {

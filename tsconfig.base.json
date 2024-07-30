@@ -15,6 +15,11 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "landing2/Routes": ["apps/landing2/src/app/remote-entry/entry.routes.ts"],
+      "landing2/monorepo": ["apps/monorepo/src/app/app.routes.ts"],
+      "mobile-web-client/Routes": [
+        "apps/mobile-web-client/src/app/app.routes.ts"
+      ],
       "shop/Routes": ["apps/shop/src/app/remote-entry/entry.routes.ts"]
     }
   },

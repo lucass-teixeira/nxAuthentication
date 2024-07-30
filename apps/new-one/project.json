@@ -1,33 +1,33 @@
 {
-  "name": "landing",
+  "name": "new-one",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
-  "sourceRoot": "apps/landing/src",
+  "sourceRoot": "apps/new-one/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/landing",
-        "index": "apps/landing/src/index.html",
-        "browser": "apps/landing/src/main.ts",
+        "outputPath": "dist/apps/new-one",
+        "index": "apps/new-one/src/index.html",
+        "browser": "apps/new-one/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/landing/tsconfig.app.json",
+        "tsConfig": "apps/new-one/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
           {
             "glob": "**/*",
-            "input": "apps/landing/public"
+            "input": "apps/new-one/public"
           }
         ],
-        "styles": ["apps/landing/src/styles.scss"],
+        "styles": ["apps/new-one/src/styles.scss"],
         "scripts": [],
-        "server": "apps/landing/src/main.server.ts",
+        "server": "apps/new-one/src/main.server.ts",
         "prerender": true,
         "ssr": {
-          "entry": "apps/landing/server.ts"
+          "entry": "apps/new-one/server.ts"
         }
       },
       "configurations": {
@@ -58,10 +58,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "landing:build:production"
+          "buildTarget": "new-one:build:production"
         },
         "development": {
-          "buildTarget": "landing:build:development"
+          "buildTarget": "new-one:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -69,7 +69,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "landing:build"
+        "buildTarget": "new-one:build"
       }
     },
     "lint": {
@@ -79,7 +79,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/landing/jest.config.ts"
+        "jestConfig": "apps/new-one/jest.config.ts"
       }
     }
   }
